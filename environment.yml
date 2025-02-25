@@ -1,0 +1,40 @@
+name: openfe_protocol_utils
+channels:
+  - conda-forge
+dependencies:
+  - duecredit<0.10
+  - numpy
+  - rdkit
+  - packaging
+  - pip
+  - pytest
+  - pytest-xdist
+  - pytest-cov
+  - pytest-rerunfailures
+  - pydantic >=1.10.17
+  - coverage
+  - openff-toolkit>=0.16.2
+  - openff-nagl-base >=0.3.3
+  - openff-nagl-models>=0.1.2
+  - openff-units==0.2.0
+  - pint<0.22
+  - openff-models>=0.0.5
+  - click
+  - typing-extensions
+  - openmm >=8.0.0,!=8.1.0,<8.2.0
+  - openmmtools >=0.24.1
+  - openmmforcefields
+  - pooch
+  - tqdm
+  - zstandard
+  # Issue #443
+  - pymbar>4.0
+  # docs
+  - autodoc-pydantic<2.0
+  - pydata-sphinx-theme
+  - sphinx-click
+  - sphinx-toolbox
+  # Control blas/openmp threads
+  - threadpoolctl
+  - pip:
+    - git+https://github.com/OpenFreeEnergy/gufe@v1.2.0
